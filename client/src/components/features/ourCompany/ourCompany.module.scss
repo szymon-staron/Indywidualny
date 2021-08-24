@@ -1,0 +1,110 @@
+@import "../../../styles/settings.scss";
+
+.ourCompany {
+  margin: 20px 0 40px;
+  min-height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .imageBox {
+    margin-top: 10px;
+    position: absolute;
+    height: 25vh;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-image: url("https://images.unsplash.com/photo-1528870884180-5649b20f6435?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .rulesBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 15px solid $gray-border;
+    width: 80%;
+    position: absolute;
+    padding: 10px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+  .rules {
+    list-style-type: none;
+  }
+
+  .eachRule {
+    color: $font-light;
+    font-weight: 500;
+    margin: 10px 0;
+    border-left: 0px solid $bgc-color;
+    border-right: 0px solid $bgc-color;
+    border-radius: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    width: 100%;
+    font-size: 18px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (min-width: 768px) {
+  .ourCompany {
+    .imageBox {
+      height: 25vh;
+      width: 50%;
+      top: 60%;
+      left: 50%;
+    }
+
+    .eachRule {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .ourCompany {
+    min-height: 50vh;
+
+    .imageBox {
+      margin: 15px 0;
+      height: 30vh;
+      width: 50%;
+    }
+
+    .rulesBox {
+      width: 80%;
+      padding: 30px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .ourCompany {
+    min-height: 70vh;
+
+    .imageBox {
+      height: 40vh;
+      width: 50%;
+      top: 55%;
+      margin-top: 20px;
+    }
+
+    .rulesBox {
+      width: 80%;
+      border: 25px solid $gray-border;
+    }
+
+    .eachRule {
+      margin: 30px auto;
+      width: 80%;
+    }
+  }
+}

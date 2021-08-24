@@ -1,0 +1,90 @@
+@import '../../../styles/settings.scss';
+
+.header {
+  border-top: 4px solid $gray-border;
+  border-bottom: 4px solid $gray-border;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+.register {
+  min-height: 100vh;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.fieldset {
+  max-width: 540px;
+  text-align: left;
+  padding: 40px 25px;
+  border: none;
+  .field {
+    .label {
+      font-size: 15px;
+      margin: 10px;
+      width: 100%;
+      text-align: left;
+    }
+    .input {
+      margin: 10px 0px;
+      width: 100%;
+      padding: 15px;
+      font-size: 15px;
+      border-radius: 24px;
+      border: 1px solid $font-gray;
+      outline: none;
+    }
+    .passwordStrength {
+      padding: 5px 10px;
+    }
+  }
+  .fieldCheckbox {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .inputChecked {
+      margin: 5px 10px;
+      border: 2px solid $font-gray;
+    }
+    .approveAll {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .erros {
+    text-align: left;
+    color: red;
+    font-size: 14px;
+    margin: 5px 0px;
+  }
+  .labelInfo {
+    text-align: left;
+    font-size: 12px;
+    color: #a2a2a2;
+    padding: 5px 10px;
+    line-height: 1.5;
+  }
+  .submit {
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 24px;
+    border: none;
+    background-color: $bgc-color;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+    outline: none;
+  }
+  progress {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 5px;
+  }
+}
+.alert {
+  text-align: center;
+  font-size: 18px;
+  color:red;
+}

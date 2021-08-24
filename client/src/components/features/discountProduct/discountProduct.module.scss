@@ -1,0 +1,51 @@
+@import '../../../styles/settings.scss';
+
+.discountSection {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  .productNav {
+    display: none;
+  }
+
+}
+.productCard {
+  display: none;
+  padding: 10px 15px 10px 10px;
+}
+.title {
+  font-family: $font-family;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15px;
+  font-weight: 300;
+}
+
+.description {
+  color: $font-gray;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .discountSection {
+    display: block;
+    .sliderSection{
+      display: none;
+    }
+    .productNav {
+      display: block;
+    }
+    .productCard {
+      display: block;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .discountSection {
+    flex-basis: 70%;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.eachLink {
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+  .link {
+    text-decoration: none;
+    color: $font-gray;
+    font-size: 18px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .companyInfo {
+    flex-basis: calc(100% / 3);
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../../styles/settings.scss';
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transition: 0.2s linear all;
+  &:hover {
+    .arrowCenter {
+      color: $bgc-color;
+    }
+  }
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+.arrowCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+
+.arrow {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}

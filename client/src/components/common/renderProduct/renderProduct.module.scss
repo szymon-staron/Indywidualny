@@ -1,0 +1,13 @@
+.productsData {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .productsData {
+    justify-content: start;
+  }
+}

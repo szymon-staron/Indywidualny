@@ -1,0 +1,82 @@
+@import '../../../styles/settings.scss';
+
+.circleAmount {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  right: -10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  padding: 1px 3px;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: $bgc-color;
+  color: white;
+  z-index: 100;
+}
+.basketBtn {
+  position: relative;
+  padding-top: 25px;
+  flex-grow: 1;
+  margin: 0 20px;
+  background-color: white;
+  border: none;
+  outline: none;
+  text-align: right;
+  .icon {
+    color: $font-black;
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .basketBtn {
+    flex-basis: 0;
+    order: 2;
+    margin: 0 20px;
+    padding-top: 40px;
+    .icon {
+      font-size: 18px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .circleAmount {
+    text-align: center;
+    bottom: 7px;
+  }
+  .basketBtn {
+    order: 2;
+    width: 4%;
+    flex-basis: 0;
+    &:last-of-type {
+      margin-right: 30px;
+    }
+    .icon {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .basketBtn {
+    margin: 0 10px;
+    width: 2%;
+    &:last-of-type {
+      margin-right: 10px;
+    }
+    .icon {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1440px) {
+  .circleAmount {
+    bottom: 10px;
+    right: -2px;
+  }
+}

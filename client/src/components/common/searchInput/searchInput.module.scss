@@ -1,0 +1,21 @@
+.inputSearch {
+  width: calc(100% - 10px);
+  margin: 10px 5px 0px 5px;
+  border: none;
+  padding: 5px 25% 5px 25%;
+  box-shadow: 0 1px 2px 0 rgba(0, 83, 158, 0.2);
+  outline: none;
+
+  &::placeholder {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inputSearch {
+    margin: 0;
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+}

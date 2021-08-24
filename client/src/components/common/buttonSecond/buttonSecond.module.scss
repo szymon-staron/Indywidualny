@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 83, 158, 0.2);
+  outline: none;
+  color: $bgc-color;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  border: none;
+  line-height: 100%;
+  transform: translateY(-10%);
+  transition: 0.3s linear all;
+  &:hover {
+    background-color: $bgc-color;
+    color: white;
+  }
+}

@@ -1,0 +1,20 @@
+.discountSection {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin:0 auto;
+}
+.bestSellerBox {
+  border:1px solid black;
+  height: 150px;
+}
+@media (min-width: 1440px) {
+  .discountSection {
+    flex-direction: row;
+  }
+  .asideSlider {
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.productNav {
+  overflow: hidden;
+  .navList {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 20px;
+    transition: 0.1s linear all;
+    position: relative;
+    p {
+      color: $font-black;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      margin: 0;
+    }
+    &::after {
+      content: '';
+      left: 15px;
+      bottom: 15px;
+      height: 1px;
+      width: 0;
+      position: absolute;
+      background-color: $bgc-color;
+      transition: 0.2s linear all;
+    }
+    &:hover::after {
+      width: 80%;
+    }
+    &:hover p {
+      cursor: pointer;
+      color: $bgc-color;
+    }
+  }
+}

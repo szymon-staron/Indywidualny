@@ -1,0 +1,95 @@
+@import '../../../styles/settings.scss';
+
+.productCard {
+  font-family: $font-roboto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
+  .toolbar {
+    background-color: hsl(240, 20%, 97%);
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    .toolbarLeft {
+      width: 70%;
+      display: none;
+    }
+    .toolbarRight {
+      margin: 10px 5px 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .active {
+      color: $bgc-color;
+    }
+  }
+  .renderProduct {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .productCard {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productCard {
+    margin: 30px auto;
+    flex-direction: column;
+    width: 75%;
+    margin-left: auto;
+
+    .toolbar {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 5px;
+      .toolbarLeft,
+      .vievCount,
+      .amount {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .toolbarLeft {
+        width: 60%;
+        font-size: 14px;
+        color: gray;
+        margin-left: 30px;
+      }
+      .toolbarRight {
+        margin-right: 10px;
+        align-items: baseline;
+      }
+      .vievCount {
+        width: 40%;
+        justify-content: flex-start;
+      }
+      .amount {
+        margin-left: 10px;
+        list-style-type: none;
+        li {
+          cursor: pointer;
+          padding: 0 5px;
+          &:hover {
+            color: $bgc-color;
+          }
+        }
+      }
+    }
+    .renderProduct {
+      margin-left: 15px;
+    }
+  }
+}

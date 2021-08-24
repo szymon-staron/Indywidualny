@@ -1,0 +1,62 @@
+@import '../../../styles/settings.scss';
+
+.ourWorks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+.eachWork {
+  margin: 10px 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  .image {
+    width: 100%;
+    height: auto;
+    transition: 0.3s linear all;
+  }
+  .bgc {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .subtitle {
+    font-family: 'Amatic SC', cursive;
+    font-size: 44px;
+    letter-spacing: 2px;
+    width: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+    color: white;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .ourWorks {
+    flex-direction: row;
+    .header {
+      width: 100%;
+    }
+    .eachWork {
+      flex-basis: 50%;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .ourWorks {
+    .eachWork {
+      flex-basis: calc(100% / 4);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .header {
+    border-top: 4px solid $gray-border;
+    border-bottom: 4px solid $gray-border;
+    width: 100%;
+    display: none;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .shop {
+    .header {
+      display: block;
+    }
+    .shopContent {
+      display: flex;
+      width: 95%;
+      min-height: 100vh;
+      max-width: 1220px;
+      margin: 20px auto;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../styles/settings.scss';
+
+.sectionPage {
+  padding: 30px 15px;
+  max-width: 1220px;
+  margin: 0 auto;
+  .title {
+    font-family: $font-roboto;
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) {
+  .sectionPage {
+    .title {
+      font-size: 26px;
+    }
+  }
+}

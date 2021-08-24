@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.header {
+  padding: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: $font-black;
+  font-family: $font-family;
+  font-size: 24px;
+  letter-spacing: 2px;
+
+  .title {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    font-size: 18px;
+    padding: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    font-size: 24px;
+  }
+}
+@media (min-width: 2000px) {
+  .header {
+    font-size: 24px;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,35 @@
+.instagram,
+.facebook {
+  margin: 10px auto;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 43px;
+  vertical-align: middle;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.instagram {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.facebook {
+  background: linear-gradient(120deg, #3b5998, #ffffff);
+}
+@media (min-width: 768px) {
+  .fanPage {
+    flex-basis: calc(100% / 3);
+  }
+}

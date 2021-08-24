@@ -1,0 +1,40 @@
+@import '../../../styles/settings.scss';
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-top: 0.5px solid $font-gray;
+  background-color: hsl(240, 20%, 97%);
+  .header {
+    display: none;
+  }
+}
+
+.filter .filterBtn {
+  width: calc(100% - 10px);
+  margin: 10px 5px 0 5px;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  outline: none;
+  padding: 5px 25% 5px 25%;
+  line-height: 19px;
+  font-size: 14px;
+}
+.secondBtn {
+  margin-right: 5px;
+}
+@media (min-width: 1024px) {
+  .categorySection {
+    margin: 25px 0;
+    width: 20%;
+    background-color: white;
+    border-top: 0;
+    .header {
+      padding: 15px 0 5px 0;
+    }
+    .filterBtn {
+      display: none;
+    }
+  }
+}
